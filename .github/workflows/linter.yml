@@ -1,15 +1,16 @@
-on: [push]
+on: [pull_request]
 
 jobs:
-  hello_world_job:
+  linter:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Lint flutter code
     steps:
-    - name: Hello world action step
-      id: hello
-      uses: ValentinVignal/GithubActionDartAnalyzer@v0
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Set up Flutter
+      uses: subosito/flutter-action@v1
+    - run: flutter pub get
+    - name: Analyze Flutter
+      uses: ValentinVignal/action-dart-analyze@v0.2
       with:
-        who-to-greet: 'Valentin Vignal'
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+        fail-on: 'info'

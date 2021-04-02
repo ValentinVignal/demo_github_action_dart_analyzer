@@ -40,6 +40,8 @@ analyzer:
     unnecessary_null_comparison: ignore
   exclude:
     - "bin/cache/**"
+    - "lib/to_ignore"
+    - "**/**.to_ignore.dart"
 
 linter:
   rules:
