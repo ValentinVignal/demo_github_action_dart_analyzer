@@ -11,6 +11,6 @@ jobs:
       uses: subosito/flutter-action@v1
     - run: flutter pub get
     - name: Analyze Flutter
-      uses: ValentinVignal/action-dart-analyze@v0.2
+      uses: ValentinVignal/action-dart-analyze@v0.3
       with:
         fail-on: 'info'
