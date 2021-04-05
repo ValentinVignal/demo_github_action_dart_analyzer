@@ -14,4 +14,3 @@ jobs:
       uses: ValentinVignal/action-dart-analyze@v0.8
       with:
         fail-on: 'warning'
-        emojis: 'false'
