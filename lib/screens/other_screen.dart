@@ -10,6 +10,8 @@ class OtherScreen extends StatefulWidget {
 class _OtherScreenState extends State<OtherScreen> {
   @override
   Widget build(BuildContext context) {
+    const int myOKVar = 2;
+    print(myOKVar);
 
     
     return Container(

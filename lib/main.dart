@@ -121,3 +121,10 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 enum BadEnum {u}
+
+
+
+
+void myOkFunction() {
+
+}
