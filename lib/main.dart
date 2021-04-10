@@ -7,6 +7,8 @@ void main() {
  
 var myVar;
 
+var my2ndVar;
+
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -62,6 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  String myMethod() {}
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -109,8 +113,11 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: Icon(Icons.add
+        ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
+
+enum BadEnum {u}
