@@ -14,3 +14,4 @@ jobs:
       uses: ValentinVignal/action-dart-analyze@v0.9
       with:
         fail-on: 'warning'
+        format: 'false'
