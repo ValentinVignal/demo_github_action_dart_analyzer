@@ -13,4 +13,5 @@ jobs:
     - name: Analyze Flutter
       uses: ValentinVignal/action-dart-analyze@v0.10
       with:
-        fail-on: 'info'
+        fail-on: 'warning'
+        format: 'false'

@@ -6,7 +6,7 @@ class ToIgnore extends StatelessWidget {
 
   ToIgnore();
 
-
+  const myConst;
 
   @override
   Widget build(BuildContext context) {
