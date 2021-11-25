@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
 
 void main() {
   runApp(MyApp());
 }
- 
+
 var myVar;
 
 var my2ndVar;
+
+final badVar;
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -34,6 +35,8 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
+
+  final a;
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -100,6 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(''),
             Text(
               'You have pushed the button this many times:',
             ),
@@ -113,11 +117,10 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add
-        ),
+        child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
 
-enum BadEnum {u}
+enum BadEnum { u }
