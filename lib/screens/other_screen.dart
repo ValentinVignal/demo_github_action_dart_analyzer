@@ -8,6 +8,8 @@ class OtherScreen extends StatefulWidget {
 }
 
 class _OtherScreenState extends State<OtherScreen> {
+
+  final String a = 2;
   @override
   Widget build(BuildContext context) {
 
