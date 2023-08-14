@@ -4,6 +4,17 @@ jobs:
   linter:
     runs-on: ubuntu-latest
     name: Lint flutter code
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - .
+          - packages/nested_package_without_include
+          - packages/nested_package_with_include
+          - packages/nested_package_without_analysis_options_file
+    defaults:
+      run:
+        working-directory: ${{ matrix.package }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -12,3 +23,5 @@ jobs:
       - run: flutter pub get
       - name: Analyze Flutter
         uses: ValentinVignal/action-dart-analyze@v0.16.dev.0
+        with:
+          working-directory: ${{ matrix.package }}
