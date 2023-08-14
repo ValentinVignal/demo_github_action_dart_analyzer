@@ -22,6 +22,6 @@ jobs:
         uses: subosito/flutter-action@v1
       - run: flutter pub get
       - name: Analyze Flutter
-        uses: ValentinVignal/action-dart-analyze@v0.16.dev.0
+        uses: ValentinVignal/action-dart-analyze@v0.16.dev.1
         with:
           working-directory: ${{ matrix.package }}
