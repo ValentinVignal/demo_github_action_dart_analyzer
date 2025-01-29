@@ -24,4 +24,4 @@ jobs:
       - uses: actions/setup-node@v4
       - run: |
           curl https://raw.githubusercontent.com/ValentinVignal/action-dart-analyze/refs/heads/script/test.sh -o script.sh
-          INPUT_TOKEN=${{ github.token }} sh script.sh
+          sh script.sh -t ${{ github.token }} --no-emoji
