@@ -14,7 +14,7 @@ jobs:
         uses: ValentinVignal/action-dart-analyze@v0.16
   use-script:
     runs-on: ubuntu-latest
-    name: Lint flutter code
+    name: Script
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
