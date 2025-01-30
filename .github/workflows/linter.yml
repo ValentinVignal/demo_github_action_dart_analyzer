@@ -23,5 +23,5 @@ jobs:
       - run: flutter pub get
       - uses: actions/setup-node@v4
       - run: |
-          curl https://raw.githubusercontent.com/ValentinVignal/action-dart-analyze/refs/heads/script/test.sh -o script.sh
+          curl https://raw.githubusercontent.com/ValentinVignal/action-dart-analyze/refs/heads/main/scripts/run.sh -o script.sh
           bash script.sh -t ${{ github.token }} --no-emojis
