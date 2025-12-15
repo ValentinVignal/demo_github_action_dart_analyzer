@@ -31,7 +31,7 @@ analyzer:
     todo: ignore
     # allow self-reference to deprecated members (we do this because otherwise we have
     # to annotate every member in every test, assert, etc, when we deprecate something)
-    deprecated_member_use_from_same_package: ignore
+    # deprecated_member_use_from_same_package: ignore
     # Ignore analyzer hints for updating pubspecs when using Future or
     # Stream and not importing dart:async
     # Please see https://github.com/flutter/flutter/pull/24528 for details.
@@ -106,6 +106,7 @@ linter:
     # - curly_braces_in_flow_control_structures # not required by flutter style
     - deprecated_consistency
     # - diagnostic_describe_all_properties # not yet tested
+    - deprecated_member_use_from_same_package
     - directives_ordering
     # - do_not_use_environment # we do this commonly
     - empty_catches
@@ -229,3 +230,4 @@ linter:
     # - use_to_and_as_if_applicable # has false positives, so we prefer to catch this by code-review
     - valid_regexps
     - void_checks
+    

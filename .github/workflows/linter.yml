@@ -11,4 +11,9 @@ jobs:
         uses: subosito/flutter-action@v2
       - run: flutter pub get
       - name: Analyze Flutter
-        uses: ValentinVignal/action-dart-analyze@v1.0
+        uses: ValentinVignal/action-dart-analyze@feat/add-severity-override
+        with:
+          fail-on: "info"
+          severity-override: |
+            deprecated_member_use_from_same_package: note
+            unused_local_variable: info
