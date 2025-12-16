@@ -14,6 +14,6 @@ jobs:
         uses: ValentinVignal/action-dart-analyze@ee4edfd77e05583da3805e6cfbcf8f06c4f4bbb4
         with:
           fail-on: "info"
-          severity-override: |
+          severity-overrides: |
             deprecated_member_use_from_same_package: note
             unused_local_variable: info
