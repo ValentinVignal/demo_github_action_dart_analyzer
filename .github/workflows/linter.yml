@@ -11,7 +11,7 @@ jobs:
         uses: subosito/flutter-action@v2
       - run: flutter pub get
       - name: Analyze Flutter
-        uses: ValentinVignal/action-dart-analyze@20da8feffee497af7e91016f39e3cd12fe8c99c8
+        uses: ValentinVignal/action-dart-analyze@f75030aac1f483d10681ec89b733ff009b780f41
         with:
           fail-on: "info"
           severity-overrides: |
