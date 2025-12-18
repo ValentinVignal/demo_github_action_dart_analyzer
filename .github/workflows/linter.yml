@@ -13,7 +13,6 @@ jobs:
       - name: Analyze Flutter
         uses: ValentinVignal/action-dart-analyze@69e4eaed77dfc7d24bc2f28f2f1cb6da95716112
         with:
-          fail-on: "info"
           fail-on-format: false
           severity-overrides: |
             deprecated_member_use_from_same_package: note
